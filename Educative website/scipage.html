@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--Joanna Lao-->
+<html>
+	<head>
+		<title>  </title>
+		<link rel = "stylesheet" type = "text/css" href = "scipage.css" />
+		<style>
+		
+		
+		</style>
+		<script>
+		function initialize()
+		{
+		Msgbox=document.getElementById("facts");
+		myfacts=[];
+		myfacts[0]="Rain, snow, sleet and hail falling from clouds is called precipitation";
+		myfacts[1]="Fog is stratus type of cloud that appears very close to the ground.";
+		myfacts[2]="There are many variations of these 3 main cloud types including stratocumulus, altostratus, altocumulus, cirrostratus and cirrocumulus.";
+		myfacts[3]="Antarctica is the driest continent on Earth.";
+		myfacts[4]="Lightning can occur inside clouds, between clouds and from clouds to the ground.";
+		myfacts[5]="Tornadoes are sometimes called twisters.";
+		myfacts[6]="Depending on their strength, winds can be known as a breeze, gale, storm or hurricane.";
+		}
+		function generateFacts()
+		{
+		Msgbox.innerHTML= myfacts[Math.floor(Math.random()*myfacts.length)];
+		}
+		</script>
+	</head>
+		<body onload="initialize();">
+		<img class="back" src="gallery/scipageback.jpg">
+		<a href="index.html">Back to homepage </a> 
+		<br><img class="cycle" style="height:350px;width:400px;" src= "gallery/watercycle1.gif">
+		<h1> The earth has a limited amount of water.  That water keeps going around and around and so on in what we call the "Water Cycle". <br> This cycle is made up of a few main parts:</h1>
+		<ul>
+			<li> Evaporation (and transpiration)</li>
+			<li> Condensation</li>
+			<li> Precipitation</li>
+			<li> Collection</li>
+		</ul>
+		
+		<h2> Evaporation:  </h2>
+			<div>Evaporation is when the sun heats up water in rivers or lakes or the ocean and turns it into vapor or steam. The water vapor or steam leaves the river, lake or ocean and goes into the air.</div> 
+			<img class= "pic" src="gallery/watercycle2.jpg">
+		 <h2> Transpire</h2>
+			<div> People perspire (sweat) and plants transpire.  Transpiration is the process by which plants lose water out of their leaves.  Transpiration gives evaporation a bit of a hand in getting the water vapor back up into the air.</div>
+			<img class= "pic" src="gallery/watercycle3.png">
+		<h2>Condensation:</h2>
+			<div>Water vapor in the air gets cold and changes back into liquid, forming clouds. This is called condensation.
+			You can see the same sort of thing at home...  Pour a glass of cold water on a hot day and watch what happens.  Water forms on the outside of the glass.  That water didn't somehow leak through the glass!  It actually came from the air.  Water vapor in the warm air, turns back into liquid when it touches the cold glass.</div>
+			<img class= "pic" style="height:300px;width:350px;" src="gallery/watercycle4.jpg">
+		<h2> Collection:</h2>
+			<div>When water falls back to earth as precipitation, it may fall back in the oceans, lakes or rivers or it may end up on land.  When it ends up on land, it will either soak into the earth and become part of the “ground water” that plants and animals use to drink or it may run over the soil and collect in the oceans, lakes or rivers where the cycle starts
+			<h2>all over again.</h2></div>
+			<img class= "pic" style="height:300px;width:350px;" src="gallery/watercycle5.jpg">
+			
+			<button onclick="generateFacts();">Random Fun Fact Generator </button> <br>
+			<div id="facts"> ^Click for more knowledge! Try to find all 7 facts! </div>
+		</body>
+		</html>
+			<!--  --> 
+		<!-- -->
+			<!--  --> 
+		<!-- -->
+			<!--  --> 
+		<!-- -->
+			<!--  --> 
+		<!-- -->

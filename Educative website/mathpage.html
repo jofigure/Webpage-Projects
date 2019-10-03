@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--Joanna Lao-->
+<html>
+	<head>
+		<title>  </title>
+		<link rel = "stylesheet" type = "text/css" href = "mathpage.css" />
+		<style>
+		
+		
+		</style>
+		<script>
+		function initialize()
+		{
+		answerBox1=document.getElementById("answers1");
+		answerBox2=document.getElementById("answers2");
+		answerBox3=document.getElementById("answers3");
+		answerBox4=document.getElementById("answers4");
+		answerBox5=document.getElementById("answers5");
+		}
+		function showh5()
+		{
+		document.getElementById('appearh5').style.display = "block";
+		}
+		function check()
+		{
+			if (document.getElementById("first").value==1)
+			 answerBox1.innerHTML= "correct!";
+			else
+			 answerBox1.innerHTML= "wrong: 1";
+			if (document.getElementById('two').value== "4/7")
+			 answerBox2.innerHTML= "correct!";
+			else
+			 answerBox2.innerHTML= "wrong: 4/7";
+			 if (document.getElementById("three").value== "2/3")
+			 answerBox3.innerHTML= "correct!";
+			else
+			 answerBox3.innerHTML= "wrong: 2/3";
+			if (document.getElementById('four').value== "8/9")
+			 answerBox4.innerHTML= "correct!";
+			else
+			 answerBox4.innerHTML= "wrong: 8/9";
+			 if (document.getElementById('five').value== "7/12")
+			 answerBox5.innerHTML= "correct!";
+			else
+			 answerBox5.innerHTML= "wrong: 7/12  Explanation: 1/4 + 1/3 ----> 3/12 + 4/12 (find the common denominator) ---> 7/12 (add)"
+		}
+		</script>
+	</head>
+		<body onload="initialize();">
+		<a href="index.html">Back to homepage </a>
+		<img class="back" src="gallery/mathpageback.jpg">
+			<h1>Fractions</h1>
+			<h2> A fraction is a part of a whole </h2>
+			<div> 
+				<img src="gallery/mathfractions.png"><br>
+				<span> 1/2 <br> (One-Half) </span>
+				<span> 1/4 <br> (One-Quarter) </span>
+				<span> 3/8 <br> (Three-Eighths) </span>
+			</div>
+			<h3>	The top number says how many slices we <font color="red">have.</font><br>
+				The bottom number says how many equal slices it was <font color="red">cut into.</font>
+			</h3>
+			<h6>Equivalent Fractions</h6>
+			<p>Some fractions may look different, but are really the same, for example: </p>
+			<img src="gallery/mathfractions2.png">
+			<p>It is usually best to show an answer using the simplest fraction ( 1/2 in this case ). 
+			That is called Simplifying, or Reducing the Fraction</p>
+			<h6>Numerator / Denominator</h6>
+			<p>We call the top number the Numerator, it is the number of parts we have.
+			We call the bottom number the Denominator, it is the number of parts the whole is divided into.</p>
+			<div class="topfraction">Numerator</div>
+			<div>Denominator</div>
+
+			<h6>Adding Fractions</h6>
+			<p>It is easy to add fractions with the same denominator (same bottom number):</p>
+			<span> 1/4 <br> (One-Quarter) </span> <span> +</span>
+			<span> 1/4 <br> (One-Quarter) </span> <span> =</span>
+			<span> 2/4 <br> (Two-Quarters) </span> <span> =</span>
+			<span> 2/4 <br> (One-Half) </span> <br>
+			<img src="gallery/mathfractions3.png">
+			
+			<br>
+			<h5 id= "appearh5" > Answer the following question in simplest form:<br>
+			1. 1/2  + 1/2 = <input type="text" id="first"> <br> <p id="answers1"> </p>
+			2. 3/7  + 1/7 = <input type="text" id="two">	<br> <p id="answers2"> </p>
+			3. 1/6  + 3/6 = <input type="text" id="three">	<br> <p id="answers3"> </p>
+			4. 5/9  + 3/9 = <input type="text" id="four">	<br> <p id="answers4"> </p>
+			!Challenge! <br>
+			5. 1/4  + 1/3 = <input type="text" id="five">	<br> <p id="answers5"> </p>
+			<button onclick="check();"> Check Answers </button>
+			
+			</h5>
+			<button style="height:100px;width:350px;" onclick= "showh5();">Quiz</button>
+			
+		</body>
+		</html>
+			<!--  --> 
+		<!-- -->
+			<!--  --> 
+		<!-- -->
+			<!--  --> 
+		<!-- -->
+			<!--  --> 
+		<!-- -->

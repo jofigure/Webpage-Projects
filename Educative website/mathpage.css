@@ -1,0 +1,63 @@
+
+img.back
+{
+	
+	position:fixed; 
+top:0px;
+left:0px;
+width:100%;
+height:100%;
+z-index:-1;
+}
+h1
+{
+	font-size:42pt;
+	text-align:center;
+}
+h2
+{
+	margin-top:-25px;
+	font-size:18pt;
+	text-align:center;
+	font-style:italic;
+}
+div
+{
+	text-align:center;
+}
+span
+{
+	display:inline-block;
+	margin-left:25px;
+	
+}
+h3
+{
+	text-align:center;
+}
+h6
+{
+	font-size:24pt;
+	color:Green;
+	
+}
+div.topfraction
+{
+	
+	margin-left:585px;
+	display:inline-block;
+	border-bottom:solid;
+}
+p
+{
+	font-size:14pt;
+}
+h5
+{
+	display:none;
+}
+a
+{
+	color:inherit;
+	text-decoration: none;
+}
