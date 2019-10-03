@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--Joanna Lao-->
+<html>
+	<head>
+		<title>  </title>
+		<style>
+		div
+		{
+		font-size:24pt;
+		color:blue;
+		text-align:center;
+		}
+		h1
+		{
+		font-size:36pt;
+		color:red;
+		text-align:center;
+		display:inline-block;
+		}
+		</style>
+		<script>
+		function initialize()
+		{
+		getItem=document.getElementById("theItem");
+		idxNum=document.getElementById("moving");
+		myList=["oranges","paint","soda","chips"];
+		Result=document.getElementById("outBox");
+		display();
+		
+		}
+		function display()
+		{
+		 Result.innerHTML="";
+		for(idx=0; idx<myList.length; idx++ )
+					{
+					Result.innerHTML +="<br/>" + idx+ ": " + myList[idx];
+					}
+		
+		}
+		function addItem()
+		{
+		myList.push(getItem.value);
+		display();
+		}
+		function moveUp()
+		{
+		myList[idx]=
+		display();
+		}
+		function moveDown()
+		{
+		
+		}
+		</script>
+	</head>
+		<body onload="initialize();">
+			<h1>
+			Need to buy
+			<input type="text" name="item" id="theItem">
+			</h1>
+			<button onclick="addItem();"> Enter</button>
+			<div id="outBox">
+			</div>
+			<input type="text" name="idxbox" id="moving">
+		<button onclick="moveUp();"> Up </button>
+		<button onclick="();"> Down </button>
+		
+		</body>
+		</html>
+			<!--  --> 
+		<!-- -->
+			<!--  --> 
+		<!-- -->
+			<!--  --> 
+		<!-- -->
+			<!--  --> 
+		<!-- -->
